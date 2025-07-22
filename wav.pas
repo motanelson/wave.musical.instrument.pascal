@@ -129,7 +129,7 @@ var
   fout: TFileStream;
   chord: TNoteArray;
 begin
-  Write('Nome do ficheiro de texto: ');
+  Write(chr(27)+'[43;30m\nNome do ficheiro de texto: ');
   ReadLn(fname);
 
   if not FileExists(fname) then
